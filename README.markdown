@@ -6,12 +6,15 @@ I wasn't aiming for a full, big library. Just something that helps rapid develop
 
 Simplicity is the key.
 
+
+## Location: /libraries/jofe/
+
 ## Extensions:
 
 ### Major extensions:
 
 * JofeComponent - Simplify the component creation.
-<code>
+<pre>
 jimport('jofe.application.component');
 
 class BlogComponent extends JofeComponent{
@@ -27,7 +30,7 @@ class BlogComponent extends JofeComponent{
 
 $com = new BlogComponent();
 $com->run();
-</code>
+</pre>
 * JofeController - Extends JController. Wraps RESTful actions.
 * JofeView - Extends JView. Very small extention just created some default RESTful responses.
 * JofeTable - Extends JTable.
@@ -48,5 +51,3 @@ Have dependency on jQuery and need some CSS
 ## Sample component:
 
 /components/com_blog
-
-Location: /libraries/jofe/
