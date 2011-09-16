@@ -6,6 +6,21 @@ I wasn't aiming for a full, big library. Just something that helps rapid develop
 
 Simplicity is the key.
 
+For example. It does include an inflector library. So instead of what you see in Rails:
+<pre>
+	post.comments
+	post.comments.size
+</pre>
+
+In Jofe it is like
+<pre>
+	post._obj_comment
+	post._count_comment
+</pre>
+
+Note that although it is a one-to-many relationship, comment is still referred in singular form by post.
+
+It is not very cool by looking at it, but simply works for developers.
 
 ## Location: /libraries/jofe/
 
