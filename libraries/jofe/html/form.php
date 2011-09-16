@@ -390,10 +390,29 @@ class JofeForm {
 				$select .= ' <option>' . $options['empty'] . '</option>';
 			}
 			foreach ($values as $value) {
-				$select .= sprintf(' <option value="%s" %s>%s</option>', addslashes($value['value']),
-						($options['value'] == $value['value'])? 'selected' : '',
-						htmlspecialchars($value['label'])
-					);
+				if (is_a($value, 'JTable')) {
+					$val = array();
+					$tbl_key = $options['tbl_key'];
+					if (empty($tbl_key)) {
+						$tbl_key = $value->getKeyName();
+					}
+					$val['value'] = $value->$tbl_key;
+
+					$tbl_title = $options['tbl_title'];
+					if (!empty($tbl_title)) {
+						$val['label'] = $value->$tbl_title;
+					} elseif (method_exists($value, 'getTitle')) {
+						$val['label'] = $value->getTitle();
+					} else {
+						$val['label'] = $value->$tbl_key;
+					}
+				} else {
+					$val = $value;
+				}
+				$select .= sprintf(' <option value="%s" %s>%s</option>', addslashes($val['value']),
+					($options['value'] == $val['value'])? 'selected' : '',
+					htmlspecialchars($val['label'])
+				);
 			}
 			$select .= '</select>';
 		}
