@@ -14,23 +14,21 @@ Simplicity is the key.
 ### Major extensions:
 
 * JofeComponent - Simplify the component creation.
-<pre>
-jimport('jofe.application.component');
-
-class BlogComponent extends JofeComponent{
-	protected $_default_controller = 'post';
+	jimport('jofe.application.component');
 	
-	public function  prepare() {
-		parent::prepare();
-		$this->addStyleSheet('blog.css');
-		$this->addScript('jquery-1.4.4.min.js');
-		$this->addScript('blog.js');
+	class BlogComponent extends JofeComponent{
+		protected $_default_controller = 'post';
+		
+		public function  prepare() {
+			parent::prepare();
+			$this->addStyleSheet('blog.css');
+			$this->addScript('jquery-1.4.4.min.js');
+			$this->addScript('blog.js');
+		}
 	}
-}
-
-$com = new BlogComponent();
-$com->run();
-</pre>
+	
+	$com = new BlogComponent();
+	$com->run();
 * JofeController - Extends JController. Wraps RESTful actions.
 * JofeView - Extends JView. Very small extention just created some default RESTful responses.
 * JofeTable - Extends JTable.
