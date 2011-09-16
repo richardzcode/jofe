@@ -14,6 +14,7 @@ Simplicity is the key.
 ### Major extensions:
 
 * JofeComponent - Simplify the component creation.
+<pre>
 	jimport('jofe.application.component');
 	
 	class BlogComponent extends JofeComponent{
@@ -29,6 +30,7 @@ Simplicity is the key.
 	
 	$com = new BlogComponent();
 	$com->run();
+</pre>
 * JofeController - Extends JController. Wraps RESTful actions.
 * JofeView - Extends JView. Very small extention just created some default RESTful responses.
 * JofeTable - Extends JTable.
