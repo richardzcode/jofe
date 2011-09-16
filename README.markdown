@@ -47,6 +47,26 @@ Have dependency on jQuery and need some CSS
 
 * JofeForm - Helps create form.
 * JofeGrid - Takes data returned by JofeModel and renders grid.
+<pre>
+	$grid = new JofeGrid(array(
+				array(
+					'header' => 'Title',
+					'width' => '50%',
+					'field' => 'title',
+					'callback' => 'post_grid_col_title',
+					'sortable' => true
+				),
+				array(
+					'header' => 'Created',
+					'width' => '20%',
+					'field' => 'created_on',
+					'sortable' => true
+				)
+			),
+			$this->griddata
+		);
+	$grid->render();
+</pre>
 
 ## Sample component:
 
