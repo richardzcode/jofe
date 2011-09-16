@@ -1,0 +1,163 @@
+/* Shared CSS */
+
+a.anchor-button:link,a.anchor-button:visited,a.anchor-button:hover,a.anchor-button:active {
+	text-decoration: underline;
+}
+
+.hrdiv {
+	height: 1px;
+	width: 90%;
+	background-color: #AAAAAA;
+	margin: 15px auto;
+}
+
+.form-title, .form-subtitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 0.5em;
+	letter-spacing: 0.1em;
+}
+
+.form-title {
+	border-bottom: 1px solid #aaa;
+}
+
+.form-title-title {
+	font-size: 130%;
+	text-shadow: 1px 1px #ddd;
+}
+
+.form-subtitle {
+	font-size: 120%;
+	text-align: center;
+}
+
+.form-title-action {
+	float: right;
+	padding: 2px;
+}
+
+.jofeform-field {
+	padding: 2px;
+}
+
+.jofeform-field label {
+	color: #666666;
+	padding: 2px;
+}
+
+.jofeform-field-hidden {
+	padding: 0;
+}
+
+.jofeform-message {
+	font-size: 120%;
+	margin: 5px;
+}
+
+.jofeformdata-command {
+	border: 1px transparent solid;
+	padding: 2px;
+	margin: 2px;
+	font-size: 120%;
+}
+
+.jofeformdata-option {
+	display: inline-block;
+	width: 45%;
+}
+
+.jofegrid, .jofegrid-nopaging-body {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow: auto;
+}
+
+.jofegrid {
+	padding: 0 0 1px;
+	border-bottom: 1px solid #E3E4E3;
+}
+
+.jofegrid-nopaging-body {
+	height: 240px;
+}
+
+.jofegrid-header, .jofegrid-row {
+	border-bottom: 1px solid #E3E4E3;
+	line-height: 175%;
+	padding: 1px 2px;
+}
+
+.jofegrid-header {
+	border-top: 1px solid #E3E4E3;
+	background-color: #F6F6F6;
+	font-weight: bold;
+}
+
+.jofegrid-row {
+	background-color: #FFFFFF;
+}
+
+.jofegrid-row-warn {
+	background-color: #F2F58C; /*#F2F74F*/
+}
+
+.jofegrid-row-warn .jofegrid-cell a {
+	color: #E04409!important;
+}
+
+.jofegrid-cell {
+	display: inline-block;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+.jofegrid-cell-number {
+	text-align: right;
+}
+
+.jofegrid-filter {
+	background-color: #F6F6F6;
+    border: 1px solid #CCCCCC;
+    vertical-align: middle;
+}
+
+.jofegrid-brief {
+	padding-left: 20px;
+	border-top: 1px solid #E3E4E3;
+}
+
+.jofegrid-command {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.jofegrid a {
+	cursor: pointer;
+}
+
+.pager div {
+	display: inline-block;
+}
+
+/* Component specific CSS */
+.blog-form table {
+	background-color: #eee;
+}
+
+dl.comments {
+	margin-bottom: 5px;
+}
+
+dl.comments dd {
+	background-color: #eee;
+	padding: 3px;
+	border-bottom: 1px solid #ddd;
+}
+
+#blog_comment_content {
+	width: 480px;
+	height: 72px;
+}
