@@ -34,11 +34,11 @@ Simplicity is the key.
 * JofeController - Extends JController. Wraps RESTful actions.
 * JofeView - Extends JView. Very small extention just created some default RESTful responses.
 * JofeTable - Extends JTable.
-** Simple ORM features
-*** find function
-*** object relationship specified in relates_to_one, and relates_to_many.
-*** A couple of helper functions
-** Triggers
+	* Simple ORM features
+		* find function
+		* object relationship specified in relates_to_one, and relates_to_many.
+		* A couple of helper functions
+	* Triggers
 * JofeModel - Extends JModel. Handles pagination/sorting/filtering
 
 ### Side extensions:
