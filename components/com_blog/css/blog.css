@@ -1,5 +1,26 @@
 /* Shared CSS */
 
+section footer {
+	text-align: right;
+}
+
+article {
+	margin: 1em;
+	padding: 0.5em;
+	border: 1px solid #DDDDDD;
+}
+
+article header {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+
+section article footer {
+	font-size: 0.8em;
+	margin: 0.5em 0;
+	text-align: left;
+}
+
 a.anchor-button:link,a.anchor-button:visited,a.anchor-button:hover,a.anchor-button:active {
 	text-decoration: underline;
 }
@@ -143,10 +164,6 @@ a.anchor-button:link,a.anchor-button:visited,a.anchor-button:hover,a.anchor-butt
 }
 
 /* Component specific CSS */
-.blog-form table {
-	background-color: #eee;
-}
-
 dl.comments {
 	margin-bottom: 5px;
 }
